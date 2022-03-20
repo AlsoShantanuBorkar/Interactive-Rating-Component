@@ -49,7 +49,7 @@ Users should be able to:
 ## Author
 
 - Frontend Mentor - [ShantanuBorkar](https://www.frontendmentor.io/profile/ShantanuBorkar)
-- GitHub - [@yourusername](https://www.github.com/AlsoShantanuBorkar/)
+- GitHub - [ShantanuBorkar](https://www.github.com/AlsoShantanuBorkar/)
 
 
 
