@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root{
+--White: hsl(0, 0%, 100%);
+--Light-Grey: hsl(217, 12%, 63%);
+--Medium-Grey: hsl(216, 12%, 54%);
+--Dark-Blue: hsl(213, 19%, 18%);
+--Very-Dark-Blue: hsl(216, 12%, 8%);
+--Orange: hsl(25, 97%, 53%);
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   font-size: 18px; 
+}
+
+body main ul{
+    list-style-type: none;
+    padding: 2rem;
+    text-align: center;
+}
+body main ul li{
+    display: inline;
+    border-radius: 1rem;
+    background-color: var(--Very-Dark-Blue);
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.8rem;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+body main ul li:hover{
+    background-color: var(--Orange);
+    color: white;
+}
+
+body main ul li.checked{
+    background-color: var(--Light-Grey);
+    color: white;
+
+}
+
+body{
+    background-color: var(--Very-Dark-Blue);
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 1px);
+    margin: 1.25rem;
+    font-family: "Overpass" , sans-serif;
+
+}
+
+body main h1{
+    font-size: 22px;
+    color: var(--White);
+    padding-bottom: 1rem;
+}
+
+body main p , ul li{
+    font-size: 18px;
+    color: var(--Light-Grey);  
+}
+
+#ratingState{
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--Dark-Blue);
+    text-align: left;
+    margin: 1rem;
+}
+
+#ratingState .star{
+    border-radius: 1rem;
+    background-color: var(--Very-Dark-Blue);
+    padding: 0.5rem;
+    margin: 1rem  1rem 1rem  0;
+    
+}
+
+#ratingState .submit{
+    border-radius: 1rem;
+    display: flex;
+    margin: 0.4rem;
+    justify-content: center;
+    padding: 0.6rem;
+    background-color: var(--Orange);
+    color: white;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    
+}
+
+#ratingState .submit:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+
+}
+
+#thankYou{
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--Dark-Blue);
+    text-align: center;
+    margin: 1rem;
+    display: none;
+}
+
+#thankYou img{
+    padding: 1rem;
+}
+
+#thankYou div{
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 5rem;
+    background-color: var(--Very-Dark-Blue);
+    color: orange;
+}
+
+#thankYou h1{
+    padding: 1rem;
+}
+
+#thankYou p{
+    padding: 0.5rem;
+    
+}
+
+.attribution {
+    color: white;
+    font-size: 15px; 
+    text-align: center;
+    
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    transition: all 0.3s ease-in-out;
+}
+
+.attribution a:hover{
+    color: cyan;
+    font-size: 20px;
+}
+
+@media (min-width: 500px){
+    main{
+        width: 400px;
+    }
+}
