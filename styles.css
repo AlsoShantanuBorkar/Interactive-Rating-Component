@@ -152,4 +152,25 @@ body main p , ul li{
     main{
         width: 400px;
     }
+   body main ul li{
+    display: inline;
+    border-radius: 1rem;
+    background-color: var(--Very-Dark-Blue);
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+body main ul li:hover{
+    background-color: var(--Orange);
+    color: white;
+}
+
+body main ul li.checked{
+    background-color: var(--Light-Grey);
+    color: white;
+
+}
 }
